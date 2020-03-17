@@ -82,3 +82,6 @@
 2020-03-17 16:30:21,591 INFO 9040 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2020-03-17 16:30:21,591 INFO 9040 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-logrotator\app\schedule\clean_log.js
 2020-03-17 16:30:21,591 INFO 9040 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-17 16:30:23,475 INFO 2432 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-17 16:30:23,475 INFO 2432 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-17 16:30:23,475 INFO 2432 [egg-schedule]: register schedule D:\egg-learning\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
