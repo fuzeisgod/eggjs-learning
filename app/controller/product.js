@@ -5,12 +5,41 @@ class productController extends Controller {
     async index() {
         // 当前请求的上下文 Context 对象的实例，通过它我们可以拿到框架封装好的处理当前请求的各种便捷属性和方法
         const { ctx } = this
-        ctx.body = 'product'
+        const res = await ctx.service.product.index()
+        ctx.body = res
     }
 
     async detail() {
         const { ctx } = this
-        ctx.body = 'info'
+        ctx.body = `id==${ctx.query.id}`
+    }
+
+    async detail2() {
+        const { ctx } = this
+        ctx.body = `id==${ctx.params.id}`
+    }
+
+    async create() {
+        const { ctx } = this
+        const { name, weight } = ctx.request.body
+        ctx.body = {
+            name: name,
+            weight: weight
+        }
+    }
+
+    async update() {
+        const { ctx } = this
+        ctx.body = {
+            id: ctx.params.id
+        }
+    }
+
+    async delete() {
+        const { ctx } = this
+        ctx.body = {
+            id: ctx.params.id
+        }
     }
 }
 
