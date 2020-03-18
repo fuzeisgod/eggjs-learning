@@ -112,7 +112,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\egg-learning",
+      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\learning",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -149,8 +149,8 @@
       "mapping": {}
     },
     "env": "local",
-    "name": "egg-learning",
-    "keys": "<String len: 3>",
+    "name": "learning",
+    "keys": "<String len: 27>",
     "cookies": {},
     "proxy": false,
     "maxIpsCount": 0,
@@ -159,22 +159,50 @@
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "",
     "pkg": {
-      "name": "egg-learning",
+      "name": "learning",
       "version": "1.0.0",
       "description": "",
-      "main": "index.js",
-      "scripts": {
-        "dev": "egg-bin dev"
+      "private": true,
+      "egg": {
+        "declarations": true
       },
-      "author": "",
-      "license": "ISC",
       "dependencies": {
-        "egg": "^2.26.0",
-        "egg-view-nunjucks": "^2.2.0"
+        "egg": "^2.15.1",
+        "egg-scripts": "^2.11.0"
       },
       "devDependencies": {
-        "egg-bin": "^4.14.1"
-      }
+        "autod": "^3.0.1",
+        "autod-egg": "^1.1.0",
+        "egg-bin": "^4.11.0",
+        "egg-ci": "^1.11.0",
+        "egg-mock": "^3.21.0",
+        "eslint": "^5.13.0",
+        "eslint-config-egg": "^7.1.0"
+      },
+      "engines": {
+        "node": ">=10.0.0"
+      },
+      "scripts": {
+        "start": "egg-scripts start --daemon --title=egg-server-learning",
+        "stop": "egg-scripts stop --title=egg-server-learning",
+        "dev": "egg-bin dev",
+        "debug": "egg-bin debug",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod"
+      },
+      "ci": {
+        "version": "10"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "",
+      "license": "MIT"
     },
     "baseDir": "D:\\egg-learning",
     "HOME": "C:\\Users\\Administrator",
@@ -210,7 +238,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "D:\\egg-learning\\logs\\egg-learning",
+      "dir": "D:\\egg-learning\\logs\\learning",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -218,7 +246,7 @@
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
-      "appLogName": "egg-learning-web.log",
+      "appLogName": "learning-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
@@ -273,9 +301,10 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "middleware": [],
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares"
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
   },
   "plugins": {
     "session": {

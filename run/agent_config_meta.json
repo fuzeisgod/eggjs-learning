@@ -1,5 +1,6 @@
 {
   "keys": "D:\\egg-learning\\config\\config.default.js",
+  "middleware": "D:\\egg-learning\\config\\config.default.js",
   "session": {
     "maxAge": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
     "key": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
@@ -157,19 +158,47 @@
     "name": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
     "version": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
     "description": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-    "main": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-    "scripts": {
-      "dev": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    "private": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
     },
-    "author": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-    "license": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "egg": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-      "egg-view-nunjucks": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+      "egg-scripts": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "egg-bin": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
-    }
+      "autod": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "autod-egg": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "egg-ci": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "egg-mock": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "stop": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "debug": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "test": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "test-local": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "cov": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "lint": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "ci": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "autod": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "url": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
   },
   "baseDir": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
   "HOME": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
