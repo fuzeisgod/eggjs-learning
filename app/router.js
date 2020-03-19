@@ -15,4 +15,6 @@ module.exports = app => {
   router.put('/product/update/:id', controller.product.update)
 
   router.delete('/product/delete/:id', controller.product.delete)
+
+  router.post('/article/create', controller.article.create)
 };

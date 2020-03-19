@@ -1,18 +1,9 @@
 {
   "keys": "D:\\egg-learning\\config\\config.default.js",
   "middleware": "D:\\egg-learning\\config\\config.default.js",
-  "session": {
-    "maxAge": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js"
-  },
   "security": {
-    "domainWhiteList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "D:\\egg-learning\\config\\config.default.js",
       "type": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
       "useSession": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
@@ -23,6 +14,9 @@
       "queryName": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
       "value": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js"
@@ -60,6 +54,36 @@
       "ipBlackList": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "view": {
+    "mapping": {
+      ".html": "D:\\egg-learning\\config\\config.default.js"
+    },
+    "root": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "mysql": {
+    "client": {
+      "host": "D:\\egg-learning\\config\\config.default.js",
+      "port": "D:\\egg-learning\\config\\config.default.js",
+      "user": "D:\\egg-learning\\config\\config.default.js",
+      "password": "D:\\egg-learning\\config\\config.default.js",
+      "database": "D:\\egg-learning\\config\\config.default.js"
+    },
+    "app": "D:\\egg-learning\\config\\config.default.js",
+    "agent": "D:\\egg-learning\\config\\config.default.js",
+    "default": {
+      "database": "D:\\egg-learning\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\egg-learning\\node_modules\\egg-mysql\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\egg-learning\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
     "shtml": "D:\\egg-learning\\node_modules\\egg-security\\config\\config.default.js"
@@ -138,12 +162,13 @@
     "buffer": "D:\\egg-learning\\node_modules\\egg-static\\config\\config.default.js",
     "maxFiles": "D:\\egg-learning\\node_modules\\egg-static\\config\\config.default.js"
   },
-  "view": {
-    "root": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "D:\\egg-learning\\node_modules\\egg-view\\config\\config.default.js"
+  "ejs": {
+    "root": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "cache": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.local.js",
+    "debug": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "compileDebug": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "delimiter": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "strict": "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\config.default.js"
   },
   "env": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
   "name": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
@@ -164,7 +189,9 @@
     },
     "dependencies": {
       "egg": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-      "egg-scripts": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+      "egg-mysql": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "egg-scripts": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-ejs": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "autod": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
