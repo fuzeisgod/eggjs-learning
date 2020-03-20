@@ -191,7 +191,8 @@
       "egg": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
       "egg-mysql": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
-      "egg-view-ejs": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
+      "egg-view-ejs": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",
+      "moment": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "autod": "D:\\egg-learning\\node_modules\\egg\\config\\config.default.js",

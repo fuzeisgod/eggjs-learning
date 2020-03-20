@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    const { ctx, app } = this;
+    const { ctx } = this;
     // 需要 await 
     const res = await ctx.service.product.index()
     // ctx.body = res;
@@ -13,9 +13,6 @@ class HomeController extends Controller {
       res,
       lists: ['a', 'b', 'c']
     })
-
-    const res = await app.mysql.select('article');
-    console.log(res)
   }
 }
 

@@ -17,4 +17,8 @@ module.exports = app => {
   router.delete('/product/delete/:id', controller.product.delete)
 
   router.post('/article/create', controller.article.create)
+
+  router.get('/article/lists', controller.article.lists)
+
+  router.get('/article/detail/:id', controller.article.detail)
 };
