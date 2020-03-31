@@ -1,1 +1,1 @@
-alert('index')
+alert('index');

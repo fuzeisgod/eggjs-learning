@@ -8,10 +8,13 @@
   },
   "dependencies": {
     "egg": "^2.15.1",
+    "egg-mssql": "^1.0.2",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.2.1",
     "egg-view-ejs": "^2.0.1",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "tedious": "^8.2.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",

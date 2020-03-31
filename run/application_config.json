@@ -104,7 +104,7 @@
         "D:\\egg-learning\\node_modules\\egg-logrotator\\config\\locales",
         "D:\\egg-learning\\node_modules\\egg-static\\config\\locales",
         "D:\\egg-learning\\node_modules\\egg-view\\config\\locales",
-        "D:\\egg-learning\\node_modules\\egg-mysql\\config\\locales",
+        "D:\\egg-learning\\node_modules\\egg-sequelize\\config\\locales",
         "D:\\egg-learning\\node_modules\\egg-view-ejs\\config\\locales",
         "D:\\egg-learning\\node_modules\\egg\\config\\locales",
         "D:\\egg-learning\\config\\locales"
@@ -182,20 +182,13 @@
         ".html": "ejs"
       }
     },
-    "mysql": {
-      "default": {
-        "database": null,
-        "connectionLimit": 5
-      },
-      "app": true,
-      "agent": false,
-      "client": {
-        "host": "localhost",
-        "port": "3306",
-        "user": "root",
-        "password": "<String len: 6>",
-        "database": "egg_article"
-      }
+    "sequelize": {
+      "dialect": "mssql",
+      "database": "testdb",
+      "host": "localhost",
+      "port": 1433,
+      "username": "pcmsadmin",
+      "password": "<String len: 8>"
     },
     "ejs": {
       "root": "D:\\egg-learning\\app\\view",
@@ -225,10 +218,13 @@
       },
       "dependencies": {
         "egg": "^2.15.1",
+        "egg-mssql": "^1.0.2",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
+        "egg-sequelize": "^5.2.1",
         "egg-view-ejs": "^2.0.1",
-        "moment": "^2.24.0"
+        "moment": "^2.24.0",
+        "tedious": "^8.2.0"
       },
       "devDependencies": {
         "autod": "^3.0.1",
@@ -530,16 +526,16 @@
       "path": "D:\\egg-learning\\node_modules\\egg-view",
       "version": "2.1.2"
     },
-    "mysql": {
+    "sequelize": {
       "enable": true,
-      "package": "egg-mysql",
-      "name": "mysql",
+      "package": "egg-sequelize",
+      "name": "sequelize",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
       "from": "D:\\egg-learning\\config\\plugin.js",
-      "path": "D:\\egg-learning\\node_modules\\egg-mysql",
-      "version": "3.0.0"
+      "path": "D:\\egg-learning\\node_modules\\egg-sequelize",
+      "version": "5.2.1"
     },
     "ejs": {
       "enable": true,

@@ -6,11 +6,14 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
-  mysql: {
+  // mysql: {
+  //   enable: true,
+  //   package: 'egg-mysql',
+  // },
+  sequelize: {
     enable: true,
-    package: 'egg-mysql',
+    package: 'egg-sequelize',
   },
-
   ejs: {
     enable: true,
     package: 'egg-view-ejs',
